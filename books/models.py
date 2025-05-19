@@ -17,6 +17,7 @@ class Books(models.Model):
     description = models.TextField(blank=True, null=True)
     price = models.DecimalField(max_digits=10, decimal_places=2)
     is_active = models.BooleanField(default=True)
+    file = models.FileField(upload_to='books/file/')
     owner = models.ForeignKey(CustomUser, on_delete=models.PROTECT, blank=True, null=True)
     crated_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
