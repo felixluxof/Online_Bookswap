@@ -1,0 +1,207 @@
+@use "common" as *;
+
+.contact-area {
+  background: #f8fafa;
+}
+
+.contact-wrapper {
+  padding: 40px 30px;
+  background: $white;
+  box-shadow: 5px 15px 45px 0px rgba(22, 27, 45, 0.05);
+  @media #{$max-md} {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.main-contact-form,
+.signup-form {
+  .input-wrap {
+    margin-bottom: 30px;
+    label {
+      color: $body-color;
+      font-size: 16px;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+    input {
+      width: 100%;
+      border-radius: 6px;
+      background: #f8fafa;
+      border: 0;
+      padding: 13px 20px;
+      color: #505050;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+
+      &:focus {
+        @include placeholder() {
+          color: transparent;
+        }
+      }
+    }
+
+    textarea {
+      width: 100%;
+      height: 169px;
+      border-radius: 6px;
+      background: #f8fafa;
+      border: 0;
+      padding: 20px 20px;
+      color: #505050;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+
+      &:focus {
+        @include placeholder() {
+          color: transparent;
+        }
+      }
+    }
+  }
+
+  .submit-btn {
+    input[type="submit"] {
+      display: inline-block;
+      padding: 15px 30px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+      color: #ffffff;
+      background: $theme-color;
+      border-radius: 6px;
+      box-shadow: 5px 15px 45px rgba(22, 27, 45, 0.1);
+      border: 0;
+      @include transition(0.3s);
+
+      &:hover {
+        background: $theme-color-2;
+      }
+    }
+  }
+}
+
+.contact-info-layout {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+
+  .info-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 415px;
+    .icon {
+      width: 80px;
+      height: 80px;
+      flex-shrink: 0;
+      background: $theme-color-2;
+      color: $white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      @include mq(xs) {
+        width: 50px;
+        height: 50px;
+        font-size: 16px;
+      }
+    }
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      flex: 1;
+
+      p {
+        color: #161b2d;
+        font-size: 24px;
+        font-weight: 600;
+        @include mq(xs) {
+          font-size: 16px;
+          width: 100%;
+          line-height: 1.2;
+        }
+      }
+
+      a {
+        color: #161b2d;
+        font-size: 24px;
+        font-weight: 600;
+        @include mq(xs) {
+          font-size: 16px;
+          width: 100%;
+          line-height: 1.2;
+        }
+
+        &:hover {
+          color: $theme-color;
+        }
+      }
+    }
+  }
+}
+
+//signup-form
+.signup-form {
+  .input-wrap {
+    position: relative;
+    z-index: 1;
+    span {
+      position: absolute;
+      z-index: 1;
+      left: 2%;
+      top: 13%;
+      img {
+        filter: invert(100%) sepia(99%) saturate(2%) hue-rotate(165deg) brightness(106%) contrast(100%);
+      }
+    }
+    input {
+      padding-left: 60px;
+    }
+  }
+  .submit-btn {
+    .signup-btn {
+      display: inline-block;
+      padding: 15px 30px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+      color: $heading-color;
+      background: $white;
+      border-radius: 6px;
+      box-shadow: 5px 15px 45px rgba(22, 27, 45, 0.07);
+      -webkit-transition: all 0.3s linear 0s;
+      -moz-transition: all 0.3s linear 0s;
+      -o-transition: all 0.3s linear 0s;
+      transition: all 0.3s linear 0s;
+      border: 0;
+      width: 100%;
+    }
+    .btn-1 {
+      color: $white;
+      background: $heading-color;
+      &:hover {
+        background: $theme-color;
+      }
+    }
+    .divider {
+      color: $heading-color;
+      font-weight: 500;
+      text-align: center;
+      display: block;
+      margin: 10px 0;
+      position: relative;
+      z-index: 1;
+      font-size: 18px;
+    }
+  }
+}

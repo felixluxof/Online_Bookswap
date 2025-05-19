@@ -1,0 +1,306 @@
+@use "common" as *;
+
+.faq-wrapper {
+  padding: 40px;
+  background: rgba(#245d51, 0.03);
+  border-radius: 6px;
+  @include mq(xs) {
+    padding: 0;
+    border-radius: 0;
+    background: none;
+  }
+
+  .contract-phone {
+    padding: 40px 30px;
+    background: #ffffff;
+    border-radius: 6px;
+
+    .title {
+      h2 {
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 53px;
+        color: #245d51;
+        margin-bottom: 30px;
+        @include mq(lg) {
+          font-size: 36px;
+          line-height: 50px;
+        }
+        @include mq(xs) {
+          font-size: 28px;
+          line-height: 40px;
+        }
+      }
+    }
+
+    .input-wrap {
+      margin-bottom: 20px;
+
+      input {
+        padding: 14px 20px;
+        width: 100%;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: $body-color;
+        background: #f7f7f7;
+        border-radius: 6px;
+        border: none;
+      }
+
+      textarea {
+        padding: 14px 20px;
+        width: 100%;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: $body-color;
+        background: #f7f7f7;
+        border-radius: 6px;
+        border: none;
+        height: 182px;
+      }
+    }
+
+    .submit-btn {
+      margin-top: 10px;
+
+      button {
+        width: 100%;
+        display: block;
+        padding: 15px 30px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        color: #ffffff;
+        background: #245d51;
+        border-radius: 6px;
+        border: 0;
+      }
+    }
+    @media #{$max-xs} {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+}
+
+.faq-content-wrap {
+  background: #fff;
+  padding: 40px;
+  height: 100%;
+  @media #{$max-lg} {
+    padding: 24px 20px;
+  }
+  @media #{$max-xs} {
+    padding: 24px 0px;
+  }
+}
+
+.faq-accordion {
+  .accordion-item {
+    border-bottom: 1px solid argb(#505050, 0.2);
+
+    &:last-child {
+      border-bottom: 0;
+    }
+
+    .accordion-header {
+      .accordion-button {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        color: #161b2d;
+        padding: 20px 0;
+        position: relative;
+        padding-right: 48px;
+        @include mq(lg) {
+          font-size: 18px;
+        }
+        @include mq(xs) {
+          font-size: 18px;
+        }
+
+        &:before {
+          content: "\2b";
+          font-family: $icon-font;
+          font-weight: 600;
+          position: absolute;
+          right: 0;
+          width: 40px;
+          height: 40px;
+          background: linear-gradient(0deg, #ff4e59, #ff4e59), #d9d9d9;
+          box-shadow: 5px 15px 45px rgba(7, 95, 51, 0.1);
+          border-radius: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #fff;
+        }
+
+        &:after {
+          display: none;
+        }
+
+        &.collapsed {
+          &:before {
+            content: "\f068";
+            background: #245d51;
+          }
+        }
+      }
+    }
+
+    .accordion-collapse {
+      .accordion-body {
+        padding: 0 0 20px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        color: $body-color;
+        @media #{$max-lg} {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+.faq-content-wrap-2 {
+  .ext-text {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: $body-color;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(80, 80, 80, 0.2);
+  }
+}
+
+.faq-section-2 {
+  background: rgba(#245d51, 0.03);
+}
+
+.faq-wrapper-2 {
+  .faq-thumb {
+    position: relative;
+    display: inline-block;
+
+    .faq-thumb-1 {
+      display: inline-block;
+      img {
+        border-radius: 6px;
+      }
+    }
+
+    .faq-thumb-2 {
+      position: absolute;
+      z-index: 1;
+      top: 1px;
+      left: -56px;
+      transform: rotate(92deg);
+    }
+
+    .student-thumbs {
+      position: absolute;
+      bottom: 30px;
+      left: -130px;
+      z-index: 1;
+      animation: float-bob-y infinite alternate-reverse 4s;
+      @media #{$max-laptop} {
+        left: -30px;
+      }
+      @media #{$max-xs} {
+        left: 30px;
+      }
+    }
+  }
+}
+
+.faq-accordion-2 {
+  .accordion-item {
+    &:last-child {
+      border-bottom: 0;
+    }
+
+    .accordion-header {
+      .accordion-button {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 24px;
+        color: #161b2d;
+        position: relative;
+        padding: 30px 40px;
+        padding-right: 85px;
+        border-radius: 6px 6px 0 0;
+        background: #f8fafa;
+        border: 1px solid argb(#161b2d, 0.2);
+        border-bottom: 0;
+
+        @media #{$max-lg} {
+          font-size: 20px;
+        }
+        @media #{$max-xs} {
+          font-size: 18px;
+          padding: 30px 15px;
+          padding-right: 65px;
+        }
+
+        &:before {
+          content: "\f068";
+          font-family: $icon-font;
+          font-weight: 600;
+          position: absolute;
+          right: 40px;
+          width: 40px;
+          height: 40px;
+          background: $theme-color-2;
+          box-shadow: 5px 15px 45px rgba(7, 95, 51, 0.1);
+          border-radius: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #fff;
+          @include mq(xs) {
+            right: 20px;
+          }
+        }
+
+        &:after {
+          display: none;
+        }
+
+        &.collapsed {
+          border-radius: 6px;
+          border-bottom: 1px solid argb(#161b2d, 0.2);
+
+          &:before {
+            content: "\2b";
+            color: #161b2d;
+            background: #fff;
+            border: 1px solid argb(#161b2d, 0.2);
+          }
+        }
+      }
+    }
+
+    .accordion-collapse {
+      .accordion-body {
+        padding: 0 40px 30px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        color: $body-color;
+        background: #f8fafa;
+        border-radius: 0 0 6px 6px;
+        border: 1px solid argb(#161b2d, 0.2);
+        border-top: 0;
+
+        @media #{$max-xs} {
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+      }
+    }
+  }
+}

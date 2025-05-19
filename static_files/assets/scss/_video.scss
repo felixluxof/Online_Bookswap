@@ -1,0 +1,18 @@
+@use "common" as *;
+
+.video-section{
+  position: relative;
+  z-index: 2;
+  margin-bottom: -245px;
+}
+
+.video-wrapper{
+  .thumb{
+    box-shadow: 5px 15px 45px rgba(22, 27, 45, 0.05);
+    border-radius: 6px;
+    overflow: hidden;
+    img{
+      width: 100%;
+    }
+  }
+}

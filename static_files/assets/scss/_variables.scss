@@ -1,0 +1,30 @@
+$body-fonts: "Urbanist", sans-serif;
+$header-fonts: "Urbanist", sans-serif;
+$icon-font: "Font Awesome 6 Pro";
+
+$body-fz: 18px;
+$body-lh: 30px;
+$head-fw: 700;
+
+$white: #ffffff;
+$light: #f5f5f5;
+$dark: #101a23;
+$gray: #ddd;
+$heading-color: #161b2d;
+$body-color: #505050;
+$theme-color: #ff4e59;
+$theme-color-2: #245d51;
+$hr-color: #352323;
+
+// Responsive Variables for max-width
+$max-xxl: "only screen and (max-width: 1900px)";
+$max-xl: "only screen and (max-width: 1800px)";
+$max-laptop: "only screen and (max-width: 1600px)";
+$max-lg: "only screen and (max-width: 1200px)";
+$max-md: "only screen and (max-width: 991.98px)";
+$max-xs: "only screen and (max-width: 767.98px)";
+$max-sm: "only screen and (min-width: 576px) and (max-width: 767.98px)";
+$max-xs-s: "only screen and (max-width: 575.98px)";
+
+//Landscape-responsive
+$xs-landscape: "only screen and (min-width: 540px) and (max-width: 767px) and (orientation: landscape)";

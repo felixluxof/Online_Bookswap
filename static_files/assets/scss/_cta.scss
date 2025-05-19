@@ -1,0 +1,95 @@
+@use "common" as *;
+
+//subscribe-section
+.subscribe-section {
+    background: rgba(#245d51, 0.03);
+}
+
+.subscribe-wrapper {
+    padding: 70px;
+    background: linear-gradient(0deg, #ff4e59, #ff4e59), #d9d9d9;
+    border-radius: 12px;
+    margin-bottom: -103px;
+    position: relative;
+    z-index: 2;
+    @media #{$max-lg} {
+        padding: 50px 30px;
+    }
+    @media #{$max-md} {
+        margin-bottom: 0;
+    }
+
+    @media #{$max-xs} {
+        padding: 40px 15px;
+        margin-bottom: 0;
+    }
+}
+
+.subscribe-title {
+    h3 {
+        font-weight: 800;
+        font-size: 44px;
+        line-height: 1.4;
+        color: $white;
+        margin-bottom: 0;
+        @media #{$max-lg} {
+            font-size: 36px;
+        }
+        @media #{$max-md} {
+            font-size: 28px;
+        }
+    }
+}
+
+.subscribe-form {
+    form {
+        .input-wrap {
+            position: relative;
+            z-index: 1;
+
+            input {
+                width: 100%;
+                height: 60px;
+                border: none;
+                padding: 10px 20px;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 19px;
+                color: #161b2d;
+                border-radius: 6px;
+                box-shadow: 5px 15px 45px rgba(22, 27, 45, 0.05);
+                @include placeholder() {
+                    color: #505050;
+                }
+            }
+
+            button {
+                position: absolute;
+                top: 50%;
+                right: 5px;
+                padding: 15px 30px;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 19px;
+                color: #ffffff;
+                background: $theme-color-2;
+                border-radius: 6px;
+                border: none;
+                height: 50px;
+                transform: translateY(-50%);
+                @include mq(xs) {
+                    position: static;
+                    transform: translateY(0);
+                    margin-top: 20px;
+                }
+
+                &:hover {
+                    background: $theme-color;
+                    @include mq(xs) {
+                        background: $theme-color-2;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+@use "common" as *;
+
+.brand-layout {
+  display: grid;
+  grid-template-columns:repeat(5, 1fr);
+  text-align: center;
+  gap: 50px;
+  @include mq(md){
+    grid-template-columns:repeat(4, 1fr);
+  }
+  @include mq(xs){
+    grid-template-columns:repeat(2, 1fr);
+  }
+}
+
+.brand-layout-2 {
+  display: grid;
+  grid-template-columns:repeat(5, 1fr);
+  text-align: center;
+  gap: 50px;
+  @include mq(md){
+    grid-template-columns:repeat(3, 1fr);
+  }
+  @include mq(xs){
+    grid-template-columns:repeat(2, 1fr);
+  }
+}

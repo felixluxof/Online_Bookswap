@@ -1,0 +1,205 @@
+@use "common" as *;
+
+.off-canvas-section {
+  width: 100%;
+  height: 100%;
+  @include transition(0.3s);
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 9999;
+  visibility: hidden;
+  opacity: 0;
+
+  &.active {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .off-canvas-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: argb(#000, 0.5);
+  }
+}
+
+.off-canvas-wrap {
+  overflow-y: scroll;
+  width: 100%;
+  max-width: 480px;
+  height: 100%;
+  padding: 50px;
+  background: #fff;
+  @include transition(0.3s);
+  position: fixed;
+  top: 0;
+  right: -100%;
+  z-index: -99999;
+  @include mq(xs) {
+    max-width: 100%;
+    padding: 30px 15px;
+  }
+  &::-webkit-scrollbar {
+    width: 0.3em;
+  }
+
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+  }
+
+  .off-canvas-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .off-canvas-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background: $theme-color;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    @include transition(0.3s);
+
+    i {
+      @include transition(0.3s);
+    }
+
+    &:hover {
+      transform: scale(1.1);
+
+      i {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &.active {
+    right: 0;
+    visibility: visible;
+    opacity: 1;
+    z-index: 99999;
+    -webkit-transition: all 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    -moz-transition: all 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transition: all 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transition-duration: 0.6s;
+  }
+}
+
+.off-canvas-menu {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: block;
+
+      &:hover {
+        > a {
+          color: $theme-color;
+        }
+      }
+
+      a {
+        display: block;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        color: #505050;
+        padding: 10px 30px 10px 0;
+      }
+    }
+
+    .has-dropdown {
+      position: relative;
+      z-index: 1;
+
+      .toggle-btn {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 42px;
+        height: 42px;
+        z-index: 10;
+        cursor: pointer;
+
+        .icon {
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          &:before {
+            content: "\f078";
+            font-family: $icon-font;
+            font-weight: 400;
+            font-style: normal;
+            line-height: 1;
+            @include transition(0.3s);
+            font-size: 16px;
+          }
+        }
+      }
+
+      &.active,
+      &:hover {
+        > a {
+          color: $theme-color;
+        }
+
+        > .toggle-btn {
+          .icon {
+            &:before {
+              color: $theme-color;
+            }
+          }
+        }
+      }
+
+      > a {
+        position: relative;
+        z-index: 1;
+
+        .toggle-btn {
+          width: 30px;
+          height: 30px;
+          border: 1px solid rgba(80, 80, 80, 0.1);
+          background: none;
+          box-shadow: none;
+          position: absolute;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+
+          i {
+            @include transition(0.3s);
+          }
+        }
+      }
+
+      ul.sub-menu {
+        display: none;
+
+        li {
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+}
