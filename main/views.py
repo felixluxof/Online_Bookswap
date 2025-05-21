@@ -11,6 +11,23 @@ def index(request):
     }
     return render(request, 'main/index.html', context)
 
+def about(request):
+    return render(request, 'main/about-us.html') 
+
+def contact(request):
+    return render(request, 'main/contact.html') 
+
+def error(request):
+    return render(request, 'main/error.html') 
+
+def faq(request):
+    return render(request, 'main/faq.html')  
+
+def login(request):
+    return render(request, 'account/login.html') 
+
+def signup(request):
+    return render(request, 'account/signup.html') 
 
 def category_detail(request, slug):
     try:
@@ -22,3 +39,4 @@ def category_detail(request, slug):
         'books': books
     }
     return render(request, 'main/category.html', context)
+

@@ -1,0 +1,115 @@
+{% extends "base.html"%}
+{% load static %}
+
+{% block content %}
+
+
+
+        <main>
+            <!-- Breadcrumb start -->
+            <div class="breadcrumb-section pt-190 pb-150 pt-lg-120 pb-lg-120 pt-md-80 pb-md-80 pt-xs-50 pb-xs-50"
+                style="background-image: url(assets/img/page-title/page-title-bg.jpg)">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="page-title-content">
+                                <h2 class="title">Signup</h2>
+                                <div class="breadcrumb-menu">
+                                    <ul>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="#">Pages</a></li>
+                                        <li><a href="about-us.html">Signup</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Breadcrumb end -->
+
+            <!--signup-section start-->
+            <div class="signup-section pt-150 pb-150 pt-lg-120 pb-lg-90 pt-md-80 pb-md-50 pt-xs-50 pb-xs-20">
+                <div class="container">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-lg-6">
+                            <div class="signup-form">
+                                <div class="section-title text-center mb-50">
+                                    <div class="title">
+                                        <h2>Create Your Account</h2>
+                                    </div>
+                                </div>
+                                <form action="#">
+                                    <div class="input-wrap mb-20">
+                                        <span><img src="assets/img/icon/profile.svg" alt="icon"></span>
+                                        <input type="text" placeholder="Username">
+                                    </div>
+                                    <div class="input-wrap mail mb-20">
+                                        <span><img src="assets/img/icon/message-bold.svg" alt="icon"></span>
+                                        <input type="email" placeholder="Email Name">
+                                    </div>
+                                    <div class="input-wrap phone mb-20">
+                                        <span><img src="assets/img/icon/call-bold.svg" alt="icon"></span>
+                                        <input type="text" placeholder="Phone Number">
+                                    </div>
+                                    <div class="input-wrap pass mb-20">
+                                        <span><img src="assets/img/icon/lock-bold.svg" alt="icon"></span>
+                                        <input type="text" placeholder="Password">
+                                    </div>
+                                    <div class="input-wrap pass mb-20">
+                                        <span><img src="assets/img/icon/lock-bold.svg" alt="icon"></span>
+                                        <input type="text" placeholder="Confirm Password">
+                                    </div>
+                                    <div class="input-check mb-20">
+                                        <input type="checkbox">
+                                        <span>I have read and agree to the Terms & Conditions</span>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="submit-btn">
+                                            <button class="signup-btn btn-1" type="submit">Submit Now</button>
+                                            <span class="divider">OR</span>
+                                            <button class="signup-btn"><img class="mr-20"
+                                                    src="assets/img/icon/google.svg" alt="icon"> Sign Up With
+                                                Google</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--signup-section end-->
+
+            <!-- Subscribe start -->
+            <div class="subscribe-section bg-white pb-md-80 pb-xs-50">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="subscribe-wrapper" data-aos="fade-up" data-aos-delay="200">
+                                <div class="row align-items-center">
+                                    <div class="col-xl-7 col-lg-6">
+                                        <div class="subscribe-title text-lg-start text-center">
+                                            <h3>Subscribe To Our Newsletter</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-5 col-lg-6 mt-md-30 mt-xs-30">
+                                        <div class="subscribe-form text-lg-start text-center">
+                                            <form action="#">
+                                                <div class="input-wrap">
+                                                    <input type="email" placeholder="Enter Your Mail">
+                                                    <button type="submit">Subscribe</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Subscribe end -->
+        </main>
+
+{% endblock %}

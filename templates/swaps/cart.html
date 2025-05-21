@@ -1,0 +1,316 @@
+{% extends "base.html"%}
+{% load static %}
+
+{% block content %}
+
+        <!-- off-canvas start -->
+        <div class="off-canvas-section">
+            <div class="off-canvas-wrap">
+                <div class="off-canvas-head mb-30">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="{% static 'assets/img/logo/logo.svg' %}" alt="logo">
+                        </a>
+                    </div>
+                    <div class="off-canvas-close"><i class="fa-regular fa-xmark"></i></div>
+                </div>
+                <div class="off-canvas-menu mb-30">
+                    <ul>
+                        <li class="has-dropdown">
+                            <a href="index.html">Home</a>
+                            <ul class="sub-menu">
+                                <li><a href="index.html">Home 1</a></li>
+                                <li><a href="index-2.html">Home 2</a></li>
+                                <li><a href="index-3.html">Home 3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="about-us.html">About</a></li>
+                        <li class="has-dropdown">
+                            <a href="index.html">Course</a>
+                            <ul class="sub-menu">
+                                <li><a href="course-list.html">Course List</a></li>
+                                <li><a href="course-grid.html">Course Grid</a></li>
+                                <li><a href="course-details.html">Course Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-dropdown">
+                            <a href="#">Pages</a>
+                            <ul class="sub-menu">
+                                <li><a href="faq.html">Faq</a></li>
+                                <li><a href="instructors.html">Instructors</a></li>
+                                <li><a href="instructors-details.html">Instructors Details</a></li>
+                                <li class="has-dropdown">
+                                    <a href="#">Shop <span></span></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="product.html">Product</a></li>
+                                        <li><a href="product-details.html">Product Details</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="login.html">Login</a></li>
+                                <li><a href="signup.html">Signup</a></li>
+                                <li><a href="cart.html">Cart</a></li>
+                                <li><a href="checkout.html">Checkout</a></li>
+                                <li><a href="error.html">Error</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-dropdown">
+                            <a href="index.html">Blogs</a>
+                            <ul class="sub-menu">
+                                <li><a href="blog-classic.html">Blog Classic</a></li>
+                                <li><a href="blog-grid.html">Blog Grid</a></li>
+                                <li><a href="blog-details.html">Blog Details</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- offset-sidebar start -->
+                <hr>
+                <div class="offset-sidebar">
+                    <!-- <div class="mobile-menu"></div> -->
+                    <div class="offset-widget mb-40">
+                        <div class="info-widget">
+                            <h4 class="offset-title mb-20">About Us</h4>
+                            <p class="mb-30">
+                                But I must explain to you how all this mistaken idea of denouncing pleasure and
+                                praising pain was born and will give you a complete account of the system and
+                                expound the actual teachings of the great explore
+                            </p>
+                        </div>
+                    </div>
+                    <div class="offset-widget mb-30 pr-10">
+                        <div class="info-widget info-widget2">
+                            <h4 class="offset-title mb-20">Contact Info</h4>
+                            <p>
+                                <i class="fal fa-address-book"></i>
+                                23/A, Miranda City Likaoli Prikano, Dope</p>
+                            <p>
+                                <i class="fal fa-phone"></i>
+                                +0989 7876 9865 9
+                            </p>
+                            <p>
+                                <i class="fal fa-envelope-open"></i>
+                                info@example.com
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- offset-sidebar end -->
+                <div class="header-buttons d-flex justify-content-center mt-20">
+                    <a href="login.html">
+                        <img src="{% static 'assets/img/icon/user.svg' %}" alt="icon">
+                    </a>
+                    <a href="cart.html">
+                        <img src="{% static 'assets/img/icon/cart.svg' %}" alt="icon">
+                    </a>
+                </div>
+            </div>
+            <div class="off-canvas-overlay"></div>
+        </div>
+        <!-- off-canvas end -->
+
+        <main>
+            <!-- Breadcrumb start -->
+            <div class="breadcrumb-section pt-190 pb-150 pt-lg-120 pb-lg-120 pt-md-80 pb-md-80 pt-xs-50 pb-xs-50"
+                style="background-image: url({% static 'assets/img/page-title/page-title-bg.jpg' %})">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="page-title-content">
+                                <h2 class="title">Cart</h2>
+                                <div class="breadcrumb-menu">
+                                    <ul>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="#">Pages</a></li>
+                                        <li><a href="about-us.html">Cart</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Breadcrumb end -->
+
+            <!--cart-section start-->
+            <div class="cart-section pt-150 pb-180 pt-lg-120 pb-lg-120">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-8">
+                            <form action="#" class="cart-list-form">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th colspan="2">Product</th>
+                                                <th>Price</th>
+                                                <th>QTY</th>
+                                                <th>Total</th>
+                                                <th>&nbsp;</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="product-thumbnails"><a href="#" class="product-img"><img
+                                                            src="{% static 'assets/img/product/cart-1.jpg' %}" alt="Product"></a></td>
+                                                <td class="product-info">
+                                                    <a href="#" class="product-name">Rolex Gold Watch</a>
+                                                    <div class="serial">#859632007881</div>
+                                                    <ul class="style-none">
+                                                        <li class="size">Size: 23”</li>
+                                                        <li class="color">Color: Red</li>
+                                                    </ul>
+                                                </td>
+                                                <td class="price"><span>$99.00</span></td>
+                                                <td class="quantity">
+                                                    <ul class="order-box style-none">
+                                                        <li>
+                                                            <div class="btn value-decrease">-</div>
+                                                        </li>
+                                                        <li><input type="number" min="1" max="22" value="1" disabled=""
+                                                                class="product-value val"></li>
+                                                        <li>
+                                                            <div class="btn value-increase">+ </div>
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                                <td class="price total-price"><span>$99.00</span></td>
+                                                <td><a href="#" class="remove-product">x</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="product-thumbnails"><a href="#" class="product-img"><img
+                                                            src="{% static 'assets/img/product/cart-2.jpg' %}" alt="Product"></a></td>
+                                                <td class="product-info">
+                                                    <a href="#" class="product-name">Quilted Gilet With Hood</a>
+                                                    <div class="serial">#859632007881</div>
+                                                    <ul class="style-none">
+                                                        <li class="size">Size: 23”</li>
+                                                        <li class="color">Color: N/A</li>
+                                                    </ul>
+                                                </td>
+                                                <td class="price"><span>$120.00</span></td>
+                                                <td class="quantity">
+                                                    <ul class="order-box style-none">
+                                                        <li>
+                                                            <div class="btn value-decrease">-</div>
+                                                        </li>
+                                                        <li><input type="number" min="1" max="22" value="1" disabled=""
+                                                                class="product-value val"></li>
+                                                        <li>
+                                                            <div class="btn value-increase">+ </div>
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                                <td class="price total-price"><span>$120.00</span></td>
+                                                <td><a href="#" class="remove-product">x</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="product-thumbnails"><a href="#" class="product-img"><img
+                                                            src="{% static 'assets/img/product/cart-3.jpg' %}" alt="Product"></a></td>
+                                                <td class="product-info">
+                                                    <a href="#" class="product-name">Jogers with Black strip</a>
+                                                    <div class="serial">#859632007881</div>
+                                                    <ul class="style-none">
+                                                        <li class="size">Size: N/A</li>
+                                                        <li class="color">Color: Red</li>
+                                                    </ul>
+                                                </td>
+                                                <td class="price"><span>$143.00</span></td>
+                                                <td class="quantity">
+                                                    <ul class="order-box style-none">
+                                                        <li>
+                                                            <div class="btn value-decrease">-</div>
+                                                        </li>
+                                                        <li><input type="number" min="1" max="22" value="1" disabled=""
+                                                                class="product-value val"></li>
+                                                        <li>
+                                                            <div class="btn value-increase">+ </div>
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                                <td class="price total-price"><span>$143.00</span></td>
+                                                <td><a href="#" class="remove-product">x</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div> <!-- /.table-responsive -->
+
+                                <div class="cart-footer">
+                                    <div class="coupon-section d-md-flex justify-content-between px-sm-3 mx-lg-3">
+                                        <div class="coupon-form d-lg-flex align-items-center mb-20">
+                                            <input type="text" placeholder="Coupon Code">
+                                            <button class="ht_btn coupon_btn md-mt-20 sm-mb-20">Apply Code</button>
+                                        </div> <!-- /.coupon-form -->
+                                        <div
+                                            class="update-section d-flex justify-content-center justify-content-lg-end mb-20">
+                                            <p>Continue Shopping</p>
+                                            <button class="update-cart-button ms-sm-4">Update
+                                                cart</button>
+                                        </div>
+                                    </div> <!-- /.coupon-section -->
+                                </div> <!-- /.cart-footer -->
+                            </form>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="grey-bg cart-total-section d-flex flex-column pt-5">
+                                <table class="cart-total-table">
+                                    <tbody>
+                                        <tr>
+                                            <th>Subtotal</th>
+                                            <td>$276.65</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Shipping Fee:</th>
+                                            <td>$13.00</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Shipping Date: <span>14 Aug to 18 Aug</span></th>
+                                        </tr>
+                                        <tr>
+                                            <th>Total</th>
+                                            <td>$289.65</td>
+                                        </tr>
+                                    </tbody>
+                                </table> <!-- /.cart-total-table -->
+                                <a href="checkout.html" class="theme-btn-seven checkout-process mt-30">Proceed To
+                                    Checkout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- /.container -->
+            </div>
+            <!--cart-section end-->
+
+
+            <!-- Subscribe start -->
+            <div class="subscribe-section bg-white pb-md-80 pb-xs-50">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="subscribe-wrapper" data-aos="fade-up" data-aos-delay="200">
+                                <div class="row align-items-center">
+                                    <div class="col-xl-7 col-lg-6">
+                                        <div class="subscribe-title text-lg-start text-center">
+                                            <h3>Subscribe To Our Newsletter</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-5 col-lg-6 mt-md-30 mt-xs-30">
+                                        <div class="subscribe-form text-lg-start text-center">
+                                            <form action="#">
+                                                <div class="input-wrap">
+                                                    <input type="email" placeholder="Enter Your Mail">
+                                                    <button type="submit">Subscribe</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Subscribe end -->
+        </main>
+
+{% endblock %}

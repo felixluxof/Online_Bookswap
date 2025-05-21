@@ -9,3 +9,5 @@ def book_detail(request, slug):
     if not book:
         raise Http404()
     return render(request, 'book/detail.html', {'book': book})
+
+

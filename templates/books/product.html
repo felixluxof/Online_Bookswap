@@ -1,0 +1,611 @@
+{% extends "base.html"%}
+{% load static %}
+
+{% block content %}
+
+ 
+        <main>
+            <!-- Breadcrumb start -->
+            <div class="breadcrumb-section pt-190 pb-150 pt-lg-120 pb-lg-120 pt-md-80 pb-md-80 pt-xs-50 pb-xs-50"
+                style="background-image: url({% static 'assets/img/page-title/page-title-bg.jpg' %})">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="page-title-content">
+                                <h2 class="title">About Us</h2>
+                                <div class="breadcrumb-menu">
+                                    <ul>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="#">Pages</a></li>
+                                        <li><a href="about-us.html">About Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Breadcrumb end -->
+
+            <!--products-section start-->
+            <section class="products__section pt-150 pb-130 pt-lg-60 pb-lg-40">
+                <div class="container">
+                    <div class="row gx-4 gx-xxl-5 align-items-center">
+                        <div class="col-sm-6 text-center text-sm-start mb-40">
+                            <p class="show-product-count fw-medium">
+                                Showing 07/200 result
+                            </p>
+                        </div>
+                        <div class="col-sm-6 text-center text-sm-end mb-40">
+                            <div class="sort-item">
+                                <div class="dropdown">
+                                    <span>Sort by</span>
+                                    <button class="sort-btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Default <i class="bi bi-chevron-down"></i>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#">Latest</a></li>
+                                        <li><a class="dropdown-item" href="#">Newst</a></li>
+                                        <li><a class="dropdown-item" href="#">A to Z</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row gx-4 gx-xxl-5">
+                        <div class="col-lg-9">
+                            <div class="row gx-4 px-0">
+                                <div class="col-lg-4 col-md-4 col-sm-6">
+                                    <figure class="product__wrapper white-bg mb-45">
+                                        <div class="product-thumb">
+                                            <a href="product-details.html"><img src="{% static 'assets/img/product/product_01.jpg' %}"
+                                                    class="figure-img w-100" alt="product_img"></a>
+                                            <div class="action-btn">
+                                                <a href="#"><i class="fa-regular fa-cart-shopping"></i></a>
+                                                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                                <a href="#"><i class="fa-light fa-eye"></i></a>
+                                                <a href="#"><i class="fa-light fa-code-compare"></i></a>
+                                            </div>
+                                        </div>
+                                        <figcaption class="figure-caption">
+                                            <div class="product-tag">Tech</div>
+                                            <h4><a class="product__title " href="product-details.html">
+                                                    Smart Watch
+                                                </a></h4>
+                                            <div class="price">
+                                                <span class="old-price">$166.00</span>
+                                            </div>
+                                            <a class="cart-btn" href="product-details.html"><i class="bi bi-cart2"></i>
+                                                Shop
+                                                Now</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6">
+                                    <figure class="product__wrapper white-bg mb-45">
+                                        <div class="product-thumb">
+                                            <a href="product-details.html"><img src="{% static 'assets/img/product/product_02.jpg' %}"
+                                                    class="figure-img w-100" alt="product_img"></a>
+                                            <div class="action-btn">
+                                                <a href="#"><i class="fa-regular fa-cart-shopping"></i></a>
+                                                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                                <a href="#"><i class="fa-light fa-eye"></i></a>
+                                                <a href="#"><i class="fa-light fa-code-compare"></i></a>
+                                            </div>
+                                        </div>
+                                        <figcaption class="figure-caption">
+                                            <div class="product-tag">Photography</div>
+                                            <h4><a class="product__title " href="product-details.html">Polarid
+                                                    Camera</a>
+                                            </h4>
+                                            <div class="price">
+                                                <span class="old-price">$237.00</span>
+                                            </div>
+                                            <a class="cart-btn" href="product-details.html"><i class="bi bi-cart2"></i>
+                                                Shop
+                                                Now</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6">
+                                    <figure class="product__wrapper white-bg mb-45">
+                                        <div class="product-thumb">
+                                            <a href="product-details.html"><img src="{% static 'assets/img/product/product_03.jpg' %}"
+                                                    class="figure-img w-100" alt="product_img"></a>
+                                            <div class="action-btn">
+                                                <a href="#"><i class="fa-regular fa-cart-shopping"></i></a>
+                                                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                                <a href="#"><i class="fa-light fa-eye"></i></a>
+                                                <a href="#"><i class="fa-light fa-code-compare"></i></a>
+                                            </div>
+                                        </div>
+                                        <figcaption class="figure-caption">
+                                            <div class="product-tag">Protection</div>
+                                            <h4><a class="product__title " href="product-details.html">Black
+                                                    Sunglass</a>
+                                            </h4>
+                                            <div class="price">
+                                                <span class="old-price">$16.00</span>
+                                            </div>
+                                            <a class="cart-btn" href="product-details.html"><i class="bi bi-cart2"></i>
+                                                Shop
+                                                Now</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="300">
+                                    <figure class="product__wrapper white-bg mb-45">
+                                        <div class="product-thumb">
+                                            <a href="product-details.html"><img src="{% static 'assets/img/product/product_04.jpg' %}"
+                                                    class="figure-img w-100" alt="product_img"></a>
+                                            <div class="action-btn">
+                                                <a href="#"><i class="fa-regular fa-cart-shopping"></i></a>
+                                                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                                <a href="#"><i class="fa-light fa-eye"></i></a>
+                                                <a href="#"><i class="fa-light fa-code-compare"></i></a>
+                                            </div>
+                                        </div>
+                                        <figcaption class="figure-caption">
+                                            <div class="product-tag">Tech</div>
+                                            <h4><a class="product__title " href="product-details.html">Sony EIV 500</a>
+                                            </h4>
+                                            <div class="price">
+                                                <span class="old-price">$360.00</span>
+                                            </div>
+                                            <a class="cart-btn" href="product-details.html"><i class="bi bi-cart2"></i>
+                                                Shop
+                                                Now</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6" data-aos="fade-up">
+                                    <figure class="product__wrapper white-bg mb-45">
+                                        <div class="product-thumb">
+                                            <a href="product-details.html"><img src="{% static 'assets/img/product/product_05.jpg' %}"
+                                                    class="figure-img w-100" alt="product_img"></a>
+                                            <div class="action-btn">
+                                                <a href="#"><i class="fa-regular fa-cart-shopping"></i></a>
+                                                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                                <a href="#"><i class="fa-light fa-eye"></i></a>
+                                                <a href="#"><i class="fa-light fa-code-compare"></i></a>
+                                            </div>
+                                        </div>
+                                        <figcaption class="figure-caption">
+                                            <div class="product-tag">DSLR</div>
+                                            <h4><a class="product__title " href="product-details.html">Nikon D750</a>
+                                            </h4>
+                                            <div class="price">
+                                                <span class="old-price">$550.00</span>
+                                            </div>
+                                            <a class="cart-btn" href="product-details.html"><i class="bi bi-cart2"></i>
+                                                Shop
+                                                Now</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+                                    <figure class="product__wrapper white-bg mb-45">
+                                        <div class="product-thumb">
+                                            <a href="product-details.html"><img src="{% static 'assets/img/product/product_06.jpg' %}"
+                                                    class="figure-img w-100" alt="product_img"></a>
+                                            <div class="action-btn">
+                                                <a href="#"><i class="fa-regular fa-cart-shopping"></i></a>
+                                                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                                <a href="#"><i class="fa-light fa-eye"></i></a>
+                                                <a href="#"><i class="fa-light fa-code-compare"></i></a>
+                                            </div>
+                                        </div>
+                                        <figcaption class="figure-caption">
+                                            <div class="product-tag">Game</div>
+                                            <h4><a class="product__title " href="product-details.html">Sony PS5</a></h4>
+                                            <div class="price">
+                                                <span class="old-price">$475.00</span>
+                                            </div>
+                                            <a class="cart-btn" href="product-details.html"><i class="bi bi-cart2"></i>
+                                                Shop
+                                                Now</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+                                    <figure class="product__wrapper white-bg mb-45">
+                                        <div class="product-thumb">
+                                            <a href="product-details.html"><img src="{% static 'assets/img/product/product_07.jpg' %}"
+                                                    class="figure-img w-100" alt="product_img"></a>
+                                            <div class="action-btn">
+                                                <a href="#"><i class="fa-regular fa-cart-shopping"></i></a>
+                                                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                                <a href="#"><i class="fa-light fa-eye"></i></a>
+                                                <a href="#"><i class="fa-light fa-code-compare"></i></a>
+                                            </div>
+                                        </div>
+                                        <figcaption class="figure-caption">
+                                            <div class="product-tag">Buds</div>
+                                            <h4><a class="product__title " href="product-details.html">Air Buds</a></h4>
+                                            <div class="price">
+                                                <span class="old-price">$160.00</span>
+                                            </div>
+                                            <a class="cart-btn" href="product-details.html"><i class="bi bi-cart2"></i>
+                                                Shop
+                                                Now</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="300">
+                                    <figure class="product__wrapper white-bg mb-45">
+                                        <div class="product-thumb">
+                                            <a href="product-details.html"><img src="{% static 'assets/img/product/product_08.jpg' %}"
+                                                    class="figure-img w-100" alt="product_img"></a>
+                                            <div class="action-btn">
+                                                <a href="#"><i class="fa-regular fa-cart-shopping"></i></a>
+                                                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                                <a href="#"><i class="fa-light fa-eye"></i></a>
+                                                <a href="#"><i class="fa-light fa-code-compare"></i></a>
+                                            </div>
+                                        </div>
+                                        <figcaption class="figure-caption">
+                                            <div class="product-tag">Mouse</div>
+                                            <h4><a class="product__title " href="product-details.html">Wireless
+                                                    Mouse</a>
+                                            </h4>
+                                            <div class="price">
+                                                <span class="old-price">$160.00</span>
+                                            </div>
+                                            <a class="cart-btn" href="product-details.html"><i class="bi bi-cart2"></i>
+                                                Shop
+                                                Now</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6" data-aos="fade-up">
+                                    <figure class="product__wrapper white-bg mb-45">
+                                        <div class="product-thumb">
+                                            <a href="product-details.html"><img src="{% static 'assets/img/product/product_09.jpg' %}"
+                                                    class="figure-img w-100" alt="product_img"></a>
+                                            <div class="action-btn">
+                                                <a href="#"><i class="fa-regular fa-cart-shopping"></i></a>
+                                                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                                <a href="#"><i class="fa-light fa-eye"></i></a>
+                                                <a href="#"><i class="fa-light fa-code-compare"></i></a>
+                                            </div>
+                                        </div>
+                                        <figcaption class="figure-caption">
+                                            <div class="product-tag">Technology</div>
+                                            <h4><a class="product__title " href="product-details.html">Alexa
+                                                    Controller</a>
+                                            </h4>
+                                            <div class="price">
+                                                <span class="old-price">$160.00</span>
+                                            </div>
+                                            <a class="cart-btn" href="product-details.html"><i class="bi bi-cart2"></i>
+                                                Shop
+                                                Now</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+                                    <figure class="product__wrapper white-bg mb-45">
+                                        <div class="product-thumb">
+                                            <a href="product-details.html"><img src="{% static 'assets/img/product/product_02.jpg' %}"
+                                                    class="figure-img w-100" alt="product_img"></a>
+                                            <div class="action-btn">
+                                                <a href="#"><i class="fa-regular fa-cart-shopping"></i></a>
+                                                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                                <a href="#"><i class="fa-light fa-eye"></i></a>
+                                                <a href="#"><i class="fa-light fa-code-compare"></i></a>
+                                            </div>
+                                        </div>
+                                        <figcaption class="figure-caption">
+                                            <div class="product-tag">DJI</div>
+                                            <h4><a class="product__title " href="product-details.html">Drone
+                                                    Controller</a>
+                                            </h4>
+                                            <div class="price">
+                                                <span class="old-price">$100.00</span>
+                                            </div>
+                                            <a class="cart-btn" href="product-details.html"><i class="bi bi-cart2"></i>
+                                                Shop
+                                                Now</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+                                    <figure class="product__wrapper white-bg mb-45">
+                                        <div class="product-thumb">
+                                            <a href="product-details.html"><img src="{% static 'assets/img/product/product_03.jpg' %}"
+                                                    class="figure-img w-100" alt="product_img"></a>
+                                            <div class="action-btn">
+                                                <a href="#"><i class="fa-regular fa-cart-shopping"></i></a>
+                                                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                                <a href="#"><i class="fa-light fa-eye"></i></a>
+                                                <a href="#"><i class="fa-light fa-code-compare"></i></a>
+                                            </div>
+                                        </div>
+                                        <figcaption class="figure-caption">
+                                            <div class="product-tag">Headset</div>
+                                            <h4><a class="product__title " href="product-details.html">Beats D500</a>
+                                            </h4>
+                                            <div class="price">
+                                                <span class="old-price">$700.00</span>
+                                            </div>
+                                            <a class="cart-btn" href="product-details.html"><i class="bi bi-cart2"></i>
+                                                Shop
+                                                Now</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="300">
+                                    <figure class="product__wrapper white-bg mb-45">
+                                        <div class="product-thumb">
+                                            <a href="product-details.html"><img src="{% static 'assets/img/product/product_04.jpg' %}"
+                                                    class="figure-img w-100" alt="product_img"></a>
+                                            <div class="action-btn">
+                                                <a href="#"><i class="fa-regular fa-cart-shopping"></i></a>
+                                                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                                <a href="#"><i class="fa-light fa-eye"></i></a>
+                                                <a href="#"><i class="fa-light fa-code-compare"></i></a>
+                                            </div>
+                                        </div>
+                                        <figcaption class="figure-caption">
+                                            <div class="product-tag">Smart Watch</div>
+                                            <h4><a class="product__title " href="product-details.html">Apple
+                                                    Smartwatch</a>
+                                            </h4>
+                                            <div class="price">
+                                                <span class="old-price">$350.00</span>
+                                            </div>
+                                            <a class="cart-btn" href="product-details.html"><i class="bi bi-cart2"></i>
+                                                Shop
+                                                Now</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-lg-12 mt-15">
+                                    <div class="page-pagination justify-content-lg-start justify-content-center">
+                                        <a href="#"><i class="fa-solid fa-angles-left"></i></a>
+                                        <a href="#" class="active">1</a>
+                                        <a href="#">2</a>
+                                        <a href="#">3</a>
+                                        <a href="#">4</a>
+                                        <a href="#"><i class="fa-solid fa-angles-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 order-lg-first">
+                            <div class="shop-sidebar">
+                                <div class="sidebar-widget mb-40">
+                                    <div class="widget-title mb-15">
+                                        <h4>Categories</h4>
+                                    </div>
+                                    <div class="sidebar_widget-content">
+                                        <div class="categories-accordion">
+                                            <div class="accordion" id="accordionShop">
+                                                <div class="accordion-item mb-10">
+                                                    <button class="accordion-button" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                        aria-expanded="true" aria-controls="collapseOne">
+                                                        Smart Glass
+                                                    </button>
+                                                    <ul id="collapseOne" class="accordion-collapse collapse show"
+                                                        data-bs-parent="#accordionShop">
+                                                        <li><a href="#">Ai Glass</a></li>
+                                                        <li><a href="#">Digital Glass</a></li>
+                                                        <li><a href="#">5D Gadget</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="accordion-item mb-10">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                        aria-expanded="false" aria-controls="collapseTwo">
+                                                        Watches
+                                                    </button>
+                                                    <ul id="collapseTwo" class="accordion-collapse collapse"
+                                                        data-bs-parent="#accordionShop">
+                                                        <li><a href="#">Smart Gear</a></li>
+                                                        <li><a href="#">Apple Watch</a></li>
+                                                        <li><a href="#">Smart Gadget</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="accordion-item mb-10">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                        aria-expanded="false" aria-controls="collapseThree">
+                                                        Smart Mobile
+                                                    </button>
+                                                    <ul id="collapseThree" class="accordion-collapse collapse"
+                                                        data-bs-parent="#accordionShop">
+                                                        <li><a href="#">SamSung Gadget</a></li>
+                                                        <li><a href="#">Apple Gear</a></li>
+                                                        <li><a href="#">Smart Gadget</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="accordion-item mb-10">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                                        aria-expanded="false" aria-controls="collapseFour">
+                                                        Camera
+                                                    </button>
+                                                    <ul id="collapseFour" class="accordion-collapse collapse"
+                                                        data-bs-parent="#accordionShop">
+                                                        <li><a href="#">Smart Camera</a></li>
+                                                        <li><a href="#">3D Gadget</a></li>
+                                                        <li><a href="#">5D Camera</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="accordion-item mb-10">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                                        aria-expanded="false" aria-controls="collapseFive">
+                                                        Play Station
+                                                    </button>
+                                                    <ul id="collapseFive" class="accordion-collapse collapse"
+                                                        data-bs-parent="#accordionShop">
+                                                        <li><a href="#">Sony Gadget</a></li>
+                                                        <li><a href="#">Xbox Game</a></li>
+                                                        <li><a href="#">Smart Gadget</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="accordion-item">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseSix"
+                                                        aria-expanded="false" aria-controls="collapseSix">
+                                                        Headphone
+                                                    </button>
+                                                    <ul id="collapseSix" class="accordion-collapse collapse"
+                                                        data-bs-parent="#accordionShop">
+                                                        <li><a href="#">HiFi Earphone</a></li>
+                                                        <li><a href="#">Wearless Speaker</a></li>
+                                                        <li><a href="#">Bedside Alexa</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sidebar-widget mb-40">
+                                    <div class="widget-title mb-15">
+                                        <h4>hightlight</h4>
+                                    </div>
+                                    <div class="sidebar_widget-content">
+                                        <ul class="highlight_content">
+                                            <li><a href="#">Promotions (885)</a></li>
+                                            <li><a href="#">New Arrivals (987)</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="sidebar-widget mb-40">
+                                    <div class="widget-title mb-15">
+                                        <h4>By Prices</h4>
+                                    </div>
+                                    <div class="sidebar_widget-content">
+                                        <div class="price__slider">
+                                            <form class="price_range" action="#">
+                                                <button class="filter">filter</button>
+                                                <label for="amount">Price:</label>
+                                                <input type="text" id="amount" readonly
+                                                    style="border:0; color:#f6931f; font-weight:bold;">
+                                            </form>
+
+                                            <div id="slider-range"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sidebar-widget mb-40">
+                                    <div class="widget-title mb-15">
+                                        <h4>by review</h4>
+                                    </div>
+                                    <div class="sidebar_widget-content">
+                                        <div class="widget_review">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault1">
+                                                <div class="products_rating mb-10">
+                                                    <a href="#"><i class="fas fa-star"></i></a>
+                                                    <a href="#"><i class="fas fa-star"></i></a>
+                                                    <a href="#"><i class="fas fa-star"></i></a>
+                                                    <a href="#"><i class="fas fa-star"></i></a>
+                                                    <a href="#"><i class="fas fa-star"></i></a>
+                                                    <span>(05)</span>
+                                                </div>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault2">
+                                                <div class="products_rating mb-10">
+                                                    <a href="#"><i class="fas fa-star"></i></a>
+                                                    <a href="#"><i class="fas fa-star"></i></a>
+                                                    <a href="#"><i class="fas fa-star"></i></a>
+                                                    <a href="#"><i class="fas fa-star"></i></a>
+                                                    <span>(04)</span>
+                                                </div>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault3">
+                                                <div class="products_rating mb-10">
+                                                    <a href="#"><i class="fas fa-star"></i></a>
+                                                    <a href="#"><i class="fas fa-star"></i></a>
+                                                    <a href="#"><i class="fas fa-star"></i></a>
+                                                    <span>(03)</span>
+                                                </div>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault4">
+                                                <div class="products_rating mb-10">
+                                                    <a href="#"><i class="fas fa-star"></i></a>
+                                                    <a href="#"><i class="fas fa-star"></i></a>
+                                                    <span>(02)</span>
+                                                </div>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault5">
+                                                <div class="products_rating">
+                                                    <a href="#"><i class="fas fa-star"></i></a>
+                                                    <span>(03)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sidebar-widget mb-40">
+                                    <div class="widget-title mb-20">
+                                        <h4>by color</h4>
+                                    </div>
+                                    <div class="sidebar_widget-content">
+                                        <div class="color_picker">
+                                            <a href="#" class="color" style="background-color:#e6c79e;"></a>
+                                            <a href="#" class="color" style="background-color:#09abd7;"></a>
+                                            <a href="#" class="color" style="background-color:#2fb946;"></a>
+                                            <a href="#" class="color" style="background-color:#9e8367;"></a>
+                                            <a href="#" class="color" style="background-color:#dd620a;"></a>
+                                            <a href="#" class="color" style="background-color:#eded0d;"></a>
+                                            <a href="#" class="color" style="background-color:#926f08;"></a>
+                                            <a href="#" class="color" style="background-color:#4b06c2;"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <!--products-section end-->
+
+
+            <!-- Subscribe start -->
+            <div class="subscribe-section bg-white pb-md-80 pb-xs-50">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="subscribe-wrapper" data-aos="fade-up" data-aos-delay="200">
+                                <div class="row align-items-center">
+                                    <div class="col-xl-7 col-lg-6">
+                                        <div class="subscribe-title text-lg-start text-center">
+                                            <h3>Subscribe To Our Newsletter</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-5 col-lg-6 mt-md-30 mt-xs-30">
+                                        <div class="subscribe-form text-lg-start text-center">
+                                            <form action="#">
+                                                <div class="input-wrap">
+                                                    <input type="email" placeholder="Enter Your Mail">
+                                                    <button type="submit">Subscribe</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Subscribe end -->
+        </main>
+
+{% endblock %}

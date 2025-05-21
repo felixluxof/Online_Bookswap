@@ -1,0 +1,433 @@
+{% extends "base.html"%}
+{% load static %}
+
+{% block content %}
+
+        <!-- off-canvas start -->
+        <div class="off-canvas-section">
+            <div class="off-canvas-wrap">
+                <div class="off-canvas-head mb-30">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="assets/img/logo/logo.svg" alt="logo">
+                        </a>
+                    </div>
+                    <div class="off-canvas-close"><i class="fa-regular fa-xmark"></i></div>
+                </div>
+                <div class="off-canvas-menu mb-30">
+                    <ul>
+                        <li class="has-dropdown">
+                            <a href="index.html">Home</a>
+                            <ul class="sub-menu">
+                                <li><a href="index.html">Home 1</a></li>
+                                <li><a href="index-2.html">Home 2</a></li>
+                                <li><a href="index-3.html">Home 3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="about-us.html">About</a></li>
+                        <li class="has-dropdown">
+                            <a href="index.html">Course</a>
+                            <ul class="sub-menu">
+                                <li><a href="course-list.html">Course List</a></li>
+                                <li><a href="course-grid.html">Course Grid</a></li>
+                                <li><a href="course-details.html">Course Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-dropdown">
+                            <a href="#">Pages</a>
+                            <ul class="sub-menu">
+                                <li><a href="faq.html">Faq</a></li>
+                                <li><a href="instructors.html">Instructors</a></li>
+                                <li><a href="instructors-details.html">Instructors Details</a></li>
+                                <li class="has-dropdown">
+                                    <a href="#">Shop <span></span></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="product.html">Product</a></li>
+                                        <li><a href="product-details.html">Product Details</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="login.html">Login</a></li>
+                                <li><a href="signup.html">Signup</a></li>
+                                <li><a href="cart.html">Cart</a></li>
+                                <li><a href="checkout.html">Checkout</a></li>
+                                <li><a href="error.html">Error</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-dropdown">
+                            <a href="index.html">Blogs</a>
+                            <ul class="sub-menu">
+                                <li><a href="blog-classic.html">Blog Classic</a></li>
+                                <li><a href="blog-grid.html">Blog Grid</a></li>
+                                <li><a href="blog-details.html">Blog Details</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- offset-sidebar start -->
+                <hr>
+                <div class="offset-sidebar">
+                    <!-- <div class="mobile-menu"></div> -->
+                    <div class="offset-widget mb-40">
+                        <div class="info-widget">
+                            <h4 class="offset-title mb-20">About Us</h4>
+                            <p class="mb-30">
+                                But I must explain to you how all this mistaken idea of denouncing pleasure and
+                                praising pain was born and will give you a complete account of the system and
+                                expound the actual teachings of the great explore
+                            </p>
+                        </div>
+                    </div>
+                    <div class="offset-widget mb-30 pr-10">
+                        <div class="info-widget info-widget2">
+                            <h4 class="offset-title mb-20">Contact Info</h4>
+                            <p>
+                                <i class="fal fa-address-book"></i>
+                                23/A, Miranda City Likaoli Prikano, Dope</p>
+                            <p>
+                                <i class="fal fa-phone"></i>
+                                +0989 7876 9865 9
+                            </p>
+                            <p>
+                                <i class="fal fa-envelope-open"></i>
+                                info@example.com
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- offset-sidebar end -->
+                <div class="header-buttons d-flex justify-content-center mt-20">
+                    <a href="login.html">
+                        <img src="assets/img/icon/user.svg" alt="icon">
+                    </a>
+                    <a href="cart.html">
+                        <img src="assets/img/icon/cart.svg" alt="icon">
+                    </a>
+                </div>
+            </div>
+            <div class="off-canvas-overlay"></div>
+        </div>
+        <!-- off-canvas end -->
+
+        <main>
+            <!-- Breadcrumb start -->
+            <div class="breadcrumb-section pt-190 pb-150 pt-lg-120 pb-lg-120 pt-md-80 pb-md-80 pt-xs-50 pb-xs-50"
+                style="background-image: url(assets/img/page-title/page-title-bg.jpg)">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="page-title-content">
+                                <h2 class="title">Blog Grid</h2>
+                                <div class="breadcrumb-menu">
+                                    <ul>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="#">Pages</a></li>
+                                        <li><a href="blog-grid.html">Blog Grid</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Breadcrumb end -->
+
+            <!-- Blogs start -->
+            <div class="blog-grid-section pt-150 pb-150 pt-lg-120 pb-lg-120 pt-md-80 pb-md-80 pt-xs-50 pb-xs-50">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="section-title text-center mb-50">
+                                <div class="sub-title mb-10" data-aos="fade-up" data-aos-delay="150">
+                                    <p>Our Recent Articles</p>
+                                </div>
+                                <div class="title" data-aos="fade-up" data-aos-delay="200">
+                                    <h2>Latest Blog & News</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="blog-grid-wrap" data-aos="fade-up" data-aos-delay="150">
+                                <div class="blog-img">
+                                    <img src="assets/img/blog/blog-4.jpg" alt="thumb">
+                                </div>
+                                <div class="meta">
+                                    <a href="#">
+                                        <img src="assets/img/icon/hat.svg" alt="icon">
+                                        Education
+                                    </a>
+                                    <a href="#">
+                                        <img src="assets/img/icon/archive.svg" alt="icon">
+                                        21 Jan 2023
+                                    </a>
+                                </div>
+                                <h3 class="title">
+                                    <a href="blog-details.html">
+                                        Educating Your Child Early & Take
+                                        Spread Knowledge
+                                    </a>
+                                </h3>
+                                <div class="text">
+                                    <p>Beginner Diploma In Basic English Grammar is Better Search</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="blog-grid-wrap" data-aos="fade-up" data-aos-delay="200">
+                                <div class="blog-img">
+                                    <img src="assets/img/blog/blog-5.jpg" alt="thumb">
+                                </div>
+                                <div class="meta">
+                                    <a href="#">
+                                        <img src="assets/img/icon/hat.svg" alt="icon">
+                                        Courses
+                                    </a>
+                                    <a href="#">
+                                        <img src="assets/img/icon/archive.svg" alt="icon">
+                                        21 Jan 2023
+                                    </a>
+                                </div>
+                                <h3 class="title">
+                                    <a href="blog-details.html">
+                                        Join Our Training Course & Online
+                                        Build Your Skill.
+                                    </a>
+                                </h3>
+                                <div class="text">
+                                    <p>Beginner Diploma In Basic English Grammar is
+                                        Better Search</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="blog-grid-wrap" data-aos="fade-up" data-aos-delay="250">
+                                <div class="blog-img">
+                                    <img src="assets/img/blog/blog-6.jpg" alt="thumb">
+                                </div>
+                                <div class="meta">
+                                    <a href="#">
+                                        <img src="assets/img/icon/hat.svg" alt="icon">
+                                        Education
+                                    </a>
+                                    <a href="#">
+                                        <img src="assets/img/icon/archive.svg" alt="icon">
+                                        21 Jan 2023
+                                    </a>
+                                </div>
+                                <h3 class="title">
+                                    <a href="blog-details.html">
+                                        Educating Your Child Early & Take
+                                        Spread Knowledge
+                                    </a>
+                                </h3>
+                                <div class="text">
+                                    <p>Beginner Diploma In Basic English Grammar is Better Search</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="blog-grid-wrap" data-aos="fade-up" data-aos-delay="300">
+                                <div class="blog-img">
+                                    <img src="assets/img/blog/blog-7.jpg" alt="thumb">
+                                </div>
+                                <div class="meta">
+                                    <a href="#">
+                                        <img src="assets/img/icon/hat.svg" alt="icon">
+                                        Sciences
+                                    </a>
+                                    <a href="#">
+                                        <img src="assets/img/icon/archive.svg" alt="icon">
+                                        21 Jan 2023
+                                    </a>
+                                </div>
+                                <h3 class="title">
+                                    <a href="blog-details.html">
+                                        Beginner Diploma In Basic Course Of Online Education
+                                    </a>
+                                </h3>
+                                <div class="text">
+                                    <p>Beginner Diploma In Basic English Grammar is
+                                        Better Search</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="blog-grid-wrap" data-aos="fade-up" data-aos-delay="350">
+                                <div class="blog-img">
+                                    <img src="assets/img/blog/blog-8.jpg" alt="thumb">
+                                </div>
+                                <div class="meta">
+                                    <a href="#">
+                                        <img src="assets/img/icon/hat.svg" alt="icon">
+                                        Health
+                                    </a>
+                                    <a href="#">
+                                        <img src="assets/img/icon/archive.svg" alt="icon">
+                                        21 Jan 2023
+                                    </a>
+                                </div>
+                                <h3 class="title">
+                                    <a href="blog-details.html">
+                                        Complete Our Health Education of Online Course
+                                    </a>
+                                </h3>
+                                <div class="text">
+                                    <p>Beginner Diploma In Basic English Grammar is
+                                        Better Search</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="blog-grid-wrap" data-aos="fade-up" data-aos-delay="400">
+                                <div class="blog-img">
+                                    <img src="assets/img/blog/blog-9.jpg" alt="thumb">
+                                </div>
+                                <div class="meta">
+                                    <a href="#">
+                                        <img src="assets/img/icon/hat.svg" alt="icon">
+                                        Research
+                                    </a>
+                                    <a href="#">
+                                        <img src="assets/img/icon/archive.svg" alt="icon">
+                                        21 Jan 2023
+                                    </a>
+                                </div>
+                                <h3 class="title">
+                                    <a href="blog-details.html">
+                                        Educating Your Child Early & Take
+                                        Spread Knowledge
+                                    </a>
+                                </h3>
+                                <div class="text">
+                                    <p>Beginner Diploma In Basic English Grammar is Better Search</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="blog-grid-wrap" data-aos="fade-up" data-aos-delay="150">
+                                <div class="blog-img">
+                                    <img src="assets/img/blog/blog-10.jpg" alt="thumb">
+                                </div>
+                                <div class="meta">
+                                    <a href="#">
+                                        <img src="assets/img/icon/hat.svg" alt="icon">
+                                        Management
+                                    </a>
+                                    <a href="#">
+                                        <img src="assets/img/icon/archive.svg" alt="icon">
+                                        21 Jan 2023
+                                    </a>
+                                </div>
+                                <h3 class="title">
+                                    <a href="blog-details.html">
+                                        Visual thinking Management The To Communication
+                                    </a>
+                                </h3>
+                                <div class="text">
+                                    <p>Beginner Diploma In Basic English Grammar is
+                                        Better Search</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="blog-grid-wrap" data-aos="fade-up" data-aos-delay="350">
+                                <div class="blog-img">
+                                    <img src="assets/img/blog/blog-11.jpg" alt="thumb">
+                                </div>
+                                <div class="meta">
+                                    <a href="#">
+                                        <img src="assets/img/icon/hat.svg" alt="icon">
+                                        Developer
+                                    </a>
+                                    <a href="#">
+                                        <img src="assets/img/icon/archive.svg" alt="icon">
+                                        21 Jan 2023
+                                    </a>
+                                </div>
+                                <h3 class="title">
+                                    <a href="blog-details.html">
+                                        Join Our Training Course & Online
+                                        Build Your Skill.
+                                    </a>
+                                </h3>
+                                <div class="text">
+                                    <p>Beginner Diploma In Basic English Grammar is Better Search</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="blog-grid-wrap" data-aos="fade-up" data-aos-delay="400">
+                                <div class="blog-img">
+                                    <img src="assets/img/blog/blog-12.jpg" alt="thumb">
+                                </div>
+                                <div class="meta">
+                                    <a href="#">
+                                        <img src="assets/img/icon/hat.svg" alt="icon">
+                                        Designer
+                                    </a>
+                                    <a href="#">
+                                        <img src="assets/img/icon/archive.svg" alt="icon">
+                                        21 Jan 2023
+                                    </a>
+                                </div>
+                                <h3 class="title">
+                                    <a href="blog-details.html">
+                                        Complete Our Health Education of Online Course
+                                    </a>
+                                </h3>
+                                <div class="text">
+                                    <p>Beginner Diploma In Basic English Grammar is Better Search</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row text-center mt-20">
+                        <div class="col-xl-12">
+                            <div class="page-pagination" data-aos="fade-up" data-aos-delay="200">
+                                <a href="#"><i class="fa-solid fa-angles-left"></i></a>
+                                <a href="#" class="active">1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <a href="#">4</a>
+                                <a href="#"><i class="fa-solid fa-angles-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Blogs end -->
+
+            <!-- Subscribe start -->
+            <div class="subscribe-section bg-white pb-md-80 pb-xs-50">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="subscribe-wrapper" data-aos="fade-up" data-aos-delay="200">
+                                <div class="row align-items-center">
+                                    <div class="col-xl-7 col-lg-6">
+                                        <div class="subscribe-title text-lg-start text-center">
+                                            <h3>Subscribe To Our Newsletter</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-5 col-lg-6 mt-md-30 mt-xs-30">
+                                        <div class="subscribe-form text-lg-start text-center">
+                                            <form action="#">
+                                                <div class="input-wrap">
+                                                    <input type="email" placeholder="Enter Your Mail">
+                                                    <button type="submit">Subscribe</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Subscribe end -->
+        </main>
+
+ 

@@ -1,0 +1,476 @@
+{% extends "base.html"%}
+{% load static %}
+
+{% block content %}
+
+
+
+        <main>
+            <!-- Breadcrumb start -->
+            <div class="breadcrumb-section pt-190 pb-150 pt-lg-120 pb-lg-120 pt-md-80 pb-md-80 pt-xs-50 pb-xs-50"
+                style="background-image: url({% static 'assets/img/page-title/page-title-bg.jpg' %})">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="page-title-content">
+                                <h2 class="title">Course List</h2>
+                                <div class="breadcrumb-menu">
+                                    <ul>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="#">Pages</a></li>
+                                        <li><a href="course-list.html">Course List</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Breadcrumb end -->
+
+            <!--Course List start -->
+            <div class="course-list-section pt-150 pb-150 pt-lg-120 pb-lg-120 pt-md-80 pb-md-80 pt-xs-50 pb-xs-50">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-5 col-lg-4 order-2 order-lg-1 mt-lg-50 mt-md-50 mt-xs-50">
+                            <div class="sidebar-wrap widget-wrapper">
+                                <div class="sidebar-widget-wrap mb-40">
+                                    <h4 class="widget-title">Search</h4>
+                                    <div class="search-form">
+                                        <form action="#">
+                                            <div class="input-wrap">
+                                                <input type="email" placeholder="Search">
+                                                <button type="submit"><i
+                                                        class="fa-regular fa-magnifying-glass"></i></button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="sidebar-widget-wrap mb-40">
+                                    <h4 class="widget-title">Categories</h4>
+                                    <div class="widget-content">
+                                        <div class="category-list">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        <span><i class="fa-light fa-square-check"></i> Web Design</span>
+                                                        <b>35</b>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span><i class="fa-light fa-square-check"></i> App
+                                                            Landing</span>
+                                                        <b>94</b>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span><i class="fa-light fa-square-check"></i> Web
+                                                            Development</span>
+                                                        <b>25</b>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span><i class="fa-light fa-square-check"></i> Web
+                                                            Consulting</span>
+                                                        <b>18</b>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span><i class="fa-light fa-square-check"></i> App
+                                                            Categories</span>
+                                                        <b>14</b>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span><i class="fa-light fa-square-check"></i> Digital
+                                                            Marketing</span>
+                                                        <b>12</b>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sidebar-widget-wrap mb-40">
+                                    <h4 class="widget-title">Course Price</h4>
+                                    <div class="widget-content">
+                                        <div class="category-list">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        <span><i class="fa-light fa-square-check"></i> Free
+                                                            Courses</span>
+                                                        <b>35</b>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span><i class="fa-light fa-square-check"></i> Paid
+                                                            Courses</span>
+                                                        <b>27</b>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span><i class="fa-light fa-square-check"></i> Subscription
+                                                            Only</span>
+                                                        <b>14</b>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sidebar-widget-wrap mb-40">
+                                    <h4 class="widget-title">Class Duration</h4>
+                                    <div class="widget-content">
+                                        <div class="category-list">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        <span><i class="fa-light fa-square-check"></i> Less Than 2
+                                                            hours</span>
+                                                        <b>14</b>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span><i class="fa-light fa-square-check"></i> 3-5 hours</span>
+                                                        <b>27</b>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span><i class="fa-light fa-square-check"></i> 4-7 hours</span>
+                                                        <b>12</b>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sidebar-widget-wrap mb-40">
+                                    <h4 class="widget-title">Need Help You?</h4>
+                                    <div class="widget-content">
+                                        <p class="widget-content-text">
+                                            The full spiffing good time no biggie is cack is the good
+                                        </p>
+                                        <div class="contact-list">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa-regular fa-phone-plus"></i>
+                                                        (208) 555-0112
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa-regular fa-location-plus"></i>
+                                                        6391 Elgin St. Celina, Delaware 10299
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa-regular fa-envelope"></i>
+                                                        kenzi.lawson@example.com
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sidebar-widget-wrap mb-40">
+                                    <h4 class="widget-title">Share This Course</h4>
+                                    <div class="widget-social-icon">
+                                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row col-xl-7 col-lg-8 order-1 order-lg-2">
+                            <div class="col-12">
+                                <div class="filter-wrap">
+                                    <div class="filter-title">
+                                        <h4>Showing <span>3614</span> Course</h4>
+                                    </div>
+                                    <div class="filter-dropdown-wrap">
+                                        <div class="filter-text">
+                                            Sort by
+                                        </div>
+                                        <div class="filter-dropdown">
+                                            <div class="select-wrap nice-select-active">
+                                                <select>
+                                                    <option value="Category">Category</option>
+                                                    <option value="Category">Web Development</option>
+                                                    <option value="Category">Software</option>
+                                                    <option value="Category">UI/UX Design</option>
+                                                    <option value="Category">Data Science</option>
+                                                    <option value="Category">Artificial Int</option>
+                                                    <option value="Category">Miscellaneous</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12 col-lg-6 col-md-6">
+                                <div class="course-list-content mb-30">
+                                    <div class="course-img">
+                                        <img src="{% static 'assets/img/course/course-thumb-19.jpg' %}" alt="thumb">
+                                    </div>
+                                    <div class="course-content-list">
+                                        <div class="course-meta">
+                                            <div class="category">
+                                                <div class="cat-1">
+                                                    <a href="#">Internet</a>
+                                                </div>
+                                                <div class="cat-2">
+                                                    <a href="#">Merketing</a>
+                                                </div>
+                                            </div>
+                                            <div class="price">$19.00</div>
+                                        </div>
+                                        <div class="course-list-title">
+                                            <a href="course-details.html">The Most Complete Design Thinking Online
+                                                Course On The Market</a>
+                                        </div>
+                                        <div class="course-meta-bottom">
+                                            <span>
+                                                <img src="{% static 'assets/img/icon/document-g2.svg' %}" alt="icon">
+                                                10 Lesson
+                                            </span>
+                                            <span>
+                                                <img src="{% static 'assets/img/icon/3-user.svg' %}" alt="icon">
+                                                64 Students
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12 col-lg-6 col-md-6">
+                                <div class="course-list-content mb-30">
+                                    <div class="course-img">
+                                        <img src="{% static 'assets/img/course/course-thumb-20.jpg' %}" alt="thumb">
+                                    </div>
+                                    <div class="course-content-list">
+                                        <div class="course-meta">
+                                            <div class="category">
+                                                <div class="cat-1">
+                                                    <a href="#">Design</a>
+                                                </div>
+                                                <div class="cat-2">
+                                                    <a href="#">Development</a>
+                                                </div>
+                                            </div>
+                                            <div class="price">$29.99</div>
+                                        </div>
+                                        <div class="course-list-title">
+                                            <a href="course-details.html">Language Page Design &Conversion Rate Is
+                                                Course On The Market</a>
+                                        </div>
+                                        <div class="course-meta-bottom">
+                                            <span>
+                                                <img src="{% static 'assets/img/icon/document-g2.svg' %}" alt="icon">
+                                                12 Lesson
+                                            </span>
+                                            <span>
+                                                <img src="{% static 'assets/img/icon/3-user.svg' %}" alt="icon">
+                                                64 Students
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12 col-lg-6 col-md-6">
+                                <div class="course-list-content mb-30">
+                                    <div class="course-img">
+                                        <img src="{% static 'assets/img/course/course-thumb-21.jpg' %}" alt="thumb">
+                                    </div>
+                                    <div class="course-content-list">
+                                        <div class="course-meta">
+                                            <div class="category">
+                                                <div class="cat-1">
+                                                    <a href="#">Intermediate</a>
+                                                </div>
+                                                <div class="cat-2">
+                                                    <a href="#">Expert</a>
+                                                </div>
+                                            </div>
+                                            <div class="price">$12.19</div>
+                                        </div>
+                                        <div class="course-list-title">
+                                            <a href="course-details.html">The Challenge Of Global Learning Public is
+                                                Education</a>
+                                        </div>
+                                        <div class="course-meta-bottom">
+                                            <span>
+                                                <img src="{% static 'assets/img/icon/document-g2.svg' %}" alt="icon">
+                                                24 Lesson
+                                            </span>
+                                            <span>
+                                                <img src="{% static 'assets/img/icon/3-user.svg' %}" alt="icon">
+                                                64 Students
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12 col-lg-6 col-md-6">
+                                <div class="course-list-content mb-30">
+                                    <div class="course-img">
+                                        <img src="{% static 'assets/img/course/course-thumb-22.jpg' %}" alt="thumb">
+                                    </div>
+                                    <div class="course-content-list">
+                                        <div class="course-meta">
+                                            <div class="category">
+                                                <div class="cat-1">
+                                                    <a href="#">Language </a>
+                                                </div>
+                                                <div class="cat-2">
+                                                    <a href="#">English</a>
+                                                </div>
+                                            </div>
+                                            <div class="price">$29.00</div>
+                                        </div>
+                                        <div class="course-list-title">
+                                            <a href="course-details.html">Beginner Diploma In English Grammar On Online
+                                                Education</a>
+                                        </div>
+                                        <div class="course-meta-bottom">
+                                            <span>
+                                                <img src="{% static 'assets/img/icon/document-g2.svg' %}" alt="icon">
+                                                25 Lesson
+                                            </span>
+                                            <span>
+                                                <img src="{% static 'assets/img/icon/3-user.svg' %}" alt="icon">
+                                                64 Students
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12 col-lg-6 col-md-6">
+                                <div class="course-list-content mb-30">
+                                    <div class="course-img">
+                                        <img src="{% static 'assets/img/course/course-thumb-23.jpg' %}" alt="thumb">
+                                    </div>
+                                    <div class="course-content-list">
+                                        <div class="course-meta">
+                                            <div class="category">
+                                                <div class="cat-1">
+                                                    <a href="#">Webflow</a>
+                                                </div>
+                                                <div class="cat-2">
+                                                    <a href="#">UI/UX</a>
+                                                </div>
+                                            </div>
+                                            <div class="price">$20.00</div>
+                                        </div>
+                                        <div class="course-list-title">
+                                            <a href="course-details.html">The Most Complete Design Thinking Online
+                                                Course On The Market</a>
+                                        </div>
+                                        <div class="course-meta-bottom">
+                                            <span>
+                                                <img src="{% static 'assets/img/icon/document-g2.svg' %}" alt="icon">
+                                                10 Lesson
+                                            </span>
+                                            <span>
+                                                <img src="{% static 'assets/img/icon/3-user.svg' %}" alt="icon">
+                                                64 Students
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12 col-lg-6 col-md-6">
+                                <div class="course-list-content mb-50">
+                                    <div class="course-img">
+                                        <img src="{% static 'assets/img/course/course-thumb-24.jpg' %}" alt="thumb">
+                                    </div>
+                                    <div class="course-content-list">
+                                        <div class="course-meta">
+                                            <div class="category">
+                                                <div class="cat-1">
+                                                    <a href="#">SEO</a>
+                                                </div>
+                                                <div class="cat-2">
+                                                    <a href="#">Data</a>
+                                                </div>
+                                            </div>
+                                            <div class="price">$29.00</div>
+                                        </div>
+                                        <div class="course-list-title">
+                                            <a href="course-details.html">Visual Thinking : Drawing SEO Data Online Is
+                                                Communication Of
+                                                2022</a>
+                                        </div>
+                                        <div class="course-meta-bottom">
+                                            <span>
+                                                <img src="{% static 'assets/img/icon/document-g2.svg' %}" alt="icon">
+                                                10 Lesson
+                                            </span>
+                                            <span>
+                                                <img src="{% static 'assets/img/icon/3-user.svg' %}" alt="icon">
+                                                64 Students
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="page-pagination justify-content-start">
+                                    <a href="#"><i class="fa-solid fa-angles-left"></i></a>
+                                    <a href="#" class="active">1</a>
+                                    <a href="#">2</a>
+                                    <a href="#">3</a>
+                                    <a href="#">4</a>
+                                    <a href="#"><i class="fa-solid fa-angles-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Course List end -->
+
+            <!-- Subscribe start -->
+            <div class="subscribe-section bg-white pb-md-80 pb-xs-50">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="subscribe-wrapper" data-aos="fade-up" data-aos-delay="200">
+                                <div class="row align-items-center">
+                                    <div class="col-xl-7 col-lg-6">
+                                        <div class="subscribe-title text-lg-start text-center">
+                                            <h3>Subscribe To Our Newsletter</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-5 col-lg-6 mt-md-30 mt-xs-30">
+                                        <div class="subscribe-form text-lg-start text-center">
+                                            <form action="#">
+                                                <div class="input-wrap">
+                                                    <input type="email" placeholder="Enter Your Mail">
+                                                    <button type="submit">Subscribe</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Subscribe end -->
+        </main>
+
+{% endblock %}

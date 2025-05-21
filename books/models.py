@@ -13,13 +13,12 @@ class Category(models.Model):
 class Books(models.Model):
     name = models.CharField(max_length=50)
     slug = models.SlugField(max_length=50, unique=True)
-    photo = models.ImageField(upload_to='books/')
+    photo = models.ImageField(upload_to='books/images', null=True, blank=True)
     description = models.TextField(blank=True, null=True)
-    price = models.DecimalField(max_digits=10, decimal_places=2)
     is_active = models.BooleanField(default=True)
-    file = models.FileField(upload_to='books/file/')
+    file = models.FileField(upload_to='books/file/', null=True, blank=True)
     owner = models.ForeignKey(CustomUser, on_delete=models.PROTECT, blank=True, null=True)
-    crated_at = models.DateTimeField(auto_now_add=True)
+    created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
 

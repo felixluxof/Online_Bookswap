@@ -1,0 +1,666 @@
+{% extends "base.html"%}
+{% load static %}
+
+{% block content %}
+
+        <!-- off-canvas start -->
+        <div class="off-canvas-section">
+            <div class="off-canvas-wrap">
+                <div class="off-canvas-head mb-30">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="{% static 'assets/img/logo/logo.svg' %}" alt="logo">
+                        </a>
+                    </div>
+                    <div class="off-canvas-close"><i class="fa-regular fa-xmark"></i></div>
+                </div>
+                <div class="off-canvas-menu mb-30">
+                    <ul>
+                        <li class="has-dropdown">
+                            <a href="index.html">Home</a>
+                            <ul class="sub-menu">
+                                <li><a href="index.html">Home 1</a></li>
+                                <li><a href="index-2.html">Home 2</a></li>
+                                <li><a href="index-3.html">Home 3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="about-us.html">About</a></li>
+                        <li class="has-dropdown">
+                            <a href="index.html">Course</a>
+                            <ul class="sub-menu">
+                                <li><a href="course-list.html">Course List</a></li>
+                                <li><a href="course-grid.html">Course Grid</a></li>
+                                <li><a href="course-details.html">Course Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-dropdown">
+                            <a href="#">Pages</a>
+                            <ul class="sub-menu">
+                                <li><a href="faq.html">Faq</a></li>
+                                <li><a href="instructors.html">Instructors</a></li>
+                                <li><a href="instructors-details.html">Instructors Details</a></li>
+                                <li class="has-dropdown">
+                                    <a href="#">Shop <span></span></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="product.html">Product</a></li>
+                                        <li><a href="product-details.html">Product Details</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="login.html">Login</a></li>
+                                <li><a href="signup.html">Signup</a></li>
+                                <li><a href="cart.html">Cart</a></li>
+                                <li><a href="checkout.html">Checkout</a></li>
+                                <li><a href="error.html">Error</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-dropdown">
+                            <a href="index.html">Blogs</a>
+                            <ul class="sub-menu">
+                                <li><a href="blog-classic.html">Blog Classic</a></li>
+                                <li><a href="blog-grid.html">Blog Grid</a></li>
+                                <li><a href="blog-details.html">Blog Details</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- offset-sidebar start -->
+                <hr>
+                <div class="offset-sidebar">
+                    <!-- <div class="mobile-menu"></div> -->
+                    <div class="offset-widget mb-40">
+                        <div class="info-widget">
+                            <h4 class="offset-title mb-20">About Us</h4>
+                            <p class="mb-30">
+                                But I must explain to you how all this mistaken idea of denouncing pleasure and
+                                praising pain was born and will give you a complete account of the system and
+                                expound the actual teachings of the great explore
+                            </p>
+                        </div>
+                    </div>
+                    <div class="offset-widget mb-30 pr-10">
+                        <div class="info-widget info-widget2">
+                            <h4 class="offset-title mb-20">Contact Info</h4>
+                            <p>
+                                <i class="fal fa-address-book"></i>
+                                23/A, Miranda City Likaoli Prikano, Dope</p>
+                            <p>
+                                <i class="fal fa-phone"></i>
+                                +0989 7876 9865 9
+                            </p>
+                            <p>
+                                <i class="fal fa-envelope-open"></i>
+                                info@example.com
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- offset-sidebar end -->
+                <div class="header-buttons d-flex justify-content-center mt-20">
+                    <a href="login.html">
+                        <img src="{% static 'assets/img/icon/user.svg' %}" alt="icon">
+                    </a>
+                    <a href="cart.html">
+                        <img src="{% static 'assets/img/icon/cart.svg' %}" alt="icon">
+                    </a>
+                </div>
+            </div>
+            <div class="off-canvas-overlay"></div>
+        </div>
+        <!-- off-canvas end -->
+        <main>
+            <!-- Breadcrumb start -->
+            <div class="breadcrumb-section pt-190 pb-150 pt-lg-120 pb-lg-120 pt-md-80 pb-md-80 pt-xs-50 pb-xs-50"
+                style="background-image: url({% static 'assets/img/page-title/page-title-bg.jpg' %})">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="page-title-content">
+                                <h2 class="title">Course Details</h2>
+                                <div class="breadcrumb-menu">
+                                    <ul>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="#">Pages</a></li>
+                                        <li><a href="course-details.html">Course Details</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Breadcrumb end -->
+
+            <!-- Course Details start -->
+            <div class="course-details-section pt-150 pb-150 pt-lg-120 pb-lg-120 pt-md-80 pb-md-80 pt-xs-50 pb-xs-50">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-7 col-lg-8">
+                            <div class="main-content-wrap">
+                                <div class="course-header">
+                                    <div class="course-header-title">
+                                        <h2>The Most Complete Design Thinking Online Course On The Market</h2>
+                                    </div>
+                                    <div class="ratting-wrap">
+                                        <div class="ratting">
+                                            <span>
+                                                4.7
+                                            </span>
+                                            <i class="fa-solid fa-star active"></i>
+                                            <i class="fa-solid fa-star active"></i>
+                                            <i class="fa-solid fa-star active"></i>
+                                            <i class="fa-solid fa-star active"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <span>
+                                                (125)
+                                            </span>
+                                        </div>
+                                        <div class="enroll">
+                                            <a href="#"><i class="fa-duotone fa-user"></i></a>
+                                            <span>
+                                                2,35,687 Enrolled
+                                            </span>
+                                        </div>
+                                        <div class="class">
+                                            <a href="#"><i class="fa-duotone fa-circle-play"></i></a>
+                                            <span>
+                                                35 Classes
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="course-header-text">
+                                        <p>There are many variations of passages of Lorem Ipsum available, but the
+                                            majority
+                                            have
+                                            suffered alteration in some form, by injected humour, or randomised.</p>
+                                    </div>
+                                    <div class="course-header-img">
+                                        <img src="{% static 'assets/img/course/course-thumb-25.jpg' %}" alt="thumb">
+                                    </div>
+                                </div>
+                                <div class="course-description-wrap">
+                                    <div class="course-description-title">
+                                        <h3>Course Description</h3>
+                                        <div class="bar"></div>
+                                    </div>
+                                    <div class="course-description-text">
+                                        <p>
+                                            There are many variations of passages of Lorem Ipsum available, but the
+                                            majority
+                                            have
+                                            suffered alteration in some form, by injected humour, or randomised words
+                                            which
+                                            don't look even slightly believable. If you are going to use a passage of
+                                            Lorem
+                                            Ipsum, you to be sure there isn't anything embarrassing hidden in the
+                                            middle.
+                                        </p>
+                                        <p>
+                                            There are many variations of passages of Lorem Ipsum available, but the
+                                            majority
+                                            have
+                                            suffered alteration in some form, by injected humour, or randomised words
+                                            which
+                                            don't look even slightly believable. If you are going to use a passage of
+                                            Lorem
+                                            Ipsum.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="overviews-wrap">
+                                    <div class="overviews-title">
+                                        <h3>Short Overview</h3>
+                                        <div class="overview-bar"></div>
+                                    </div>
+                                    <div class="overview-layout">
+                                        <div class="overview-list">
+                                            <i class="fa-light fa-square-check"></i>
+                                            <p>Best Curriculum & Others Overview</p>
+                                        </div>
+                                        <div class="overview-list">
+                                            <i class="fa-light fa-square-check"></i>
+                                            <p>Online Course From Expert Mentors</p>
+                                        </div>
+                                        <div class="overview-list">
+                                            <i class="fa-light fa-square-check"></i>
+                                            <p>Highly Experienced & Online Course</p>
+                                        </div>
+                                        <div class="overview-list">
+                                            <i class="fa-light fa-square-check"></i>
+                                            <p>350+ High Quality Topics & Services</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="course-reviews-wrap">
+                                    <div class="reviews-title">
+                                        <h3>Course Reviews</h3>
+                                        <div class="overview-bar"></div>
+                                    </div>
+                                    <div class="review">
+                                        <div class="review-img">
+                                            <img src="{% static 'assets/img/blog/comment-1.png' %}" alt="comment">
+                                        </div>
+                                        <div class="review-info">
+                                            <div class="name">
+                                                <h4>Hardson Smith</h4>
+                                                <span>a week ago</span>
+                                            </div>
+                                            <div class="review-ratting">
+                                                <i class="fa-solid fa-star active"></i>
+                                                <i class="fa-solid fa-star active"></i>
+                                                <i class="fa-solid fa-star active"></i>
+                                                <i class="fa-solid fa-star active"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <div class="review-text">
+                                                <p>Synergistically than scalable platforms. Conveniently visualize
+                                                    installed
+                                                    online theproducts interactive results. Collaboratively corporate
+                                                    experiences open is applications.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="review mt-50 ps-md-5">
+                                        <div class="review-img">
+                                            <img src="{% static 'assets/img/blog/comment-2.png' %}" alt="thumb">
+                                        </div>
+                                        <div class="review-info">
+                                            <div class="name">
+                                                <h4>Hamina Hasan</h4>
+                                                <span>a week ago</span>
+                                            </div>
+                                            <div class="review-ratting">
+                                                <i class="fa-solid fa-star active"></i>
+                                                <i class="fa-solid fa-star active"></i>
+                                                <i class="fa-solid fa-star active"></i>
+                                                <i class="fa-solid fa-star active"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <div class="review-text">
+                                                <p>Synergistically than scalable platforms. Conveniently visualize
+                                                    installed
+                                                    online theproducts interactive results. Collaboratively corporate
+                                                    experiences open is applications.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="review mt-50">
+                                        <div class="review-img">
+                                            <img src="{% static 'assets/img/blog/comment-3.png' %}" alt="thumb">
+                                        </div>
+                                        <div class="review-info">
+                                            <div class="name">
+                                                <h4>Hardson Smith</h4>
+                                                <span>a week ago</span>
+                                            </div>
+                                            <div class="review-ratting">
+                                                <i class="fa-solid fa-star active"></i>
+                                                <i class="fa-solid fa-star active"></i>
+                                                <i class="fa-solid fa-star active"></i>
+                                                <i class="fa-solid fa-star active"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <div class="review-text">
+                                                <p>Synergistically than scalable platforms. Conveniently visualize
+                                                    installed
+                                                    online theproducts interactive results. Collaboratively corporate
+                                                    experiences open is applications.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="course-reviews-btn-wrap text-center">
+                                    <a href="">SEE MORE REVIEW</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 col-lg-4 mt-lg-50 mt-md-50 mt-xs-50">
+                            <div class="sidebar-wrap widget-wrapper sidebar-wrap-right">
+                                <div class="sidebar-widget-wrap mb-40">
+                                    <h4 class="widget-title">Search</h4>
+                                    <div class="search-form">
+                                        <form action="#">
+                                            <div class="input-wrap">
+                                                <input type="email" placeholder="Search">
+                                                <button type="submit"><i
+                                                        class="fa-regular fa-magnifying-glass"></i></button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="sidebar-widget-wrap mb-40">
+                                    <h4 class="widget-title">Categories</h4>
+                                    <div class="widget-content">
+                                        <div class="category-list">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        <span><i class="fa-light fa-square-check"></i> Web Design</span>
+                                                        <b>35</b>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span><i class="fa-light fa-square-check"></i> App
+                                                            Landing</span>
+                                                        <b>94</b>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span><i class="fa-light fa-square-check"></i> Web
+                                                            Development</span>
+                                                        <b>25</b>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span><i class="fa-light fa-square-check"></i> Web
+                                                            Consulting</span>
+                                                        <b>18</b>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span><i class="fa-light fa-square-check"></i> App
+                                                            Categories</span>
+                                                        <b>14</b>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span><i class="fa-light fa-square-check"></i> Digital
+                                                            Marketing</span>
+                                                        <b>12</b>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sidebar-widget-wrap mb-40">
+                                    <h4 class="widget-title">Course Price</h4>
+                                    <div class="widget-content">
+                                        <div class="category-list">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        <span><i class="fa-light fa-square-check"></i> Free
+                                                            Courses</span>
+                                                        <b>35</b>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span><i class="fa-light fa-square-check"></i> Paid
+                                                            Courses</span>
+                                                        <b>27</b>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span><i class="fa-light fa-square-check"></i> Subscription
+                                                            Only</span>
+                                                        <b>14</b>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sidebar-widget-wrap mb-40">
+                                    <h4 class="widget-title">Class Duration</h4>
+                                    <div class="widget-content">
+                                        <div class="category-list">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        <span><i class="fa-light fa-square-check"></i> Less Than 2
+                                                            hours</span>
+                                                        <b>14</b>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span><i class="fa-light fa-square-check"></i> 3-5 hours</span>
+                                                        <b>27</b>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span><i class="fa-light fa-square-check"></i> 4-7 hours</span>
+                                                        <b>12</b>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sidebar-widget-wrap mb-40">
+                                    <h4 class="widget-title">Need Help You?</h4>
+                                    <div class="widget-content">
+                                        <p class="widget-content-text">
+                                            The full spiffing good time no biggie is cack is the good
+                                        </p>
+                                        <div class="contact-list">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa-regular fa-phone-plus"></i>
+                                                        (208) 555-0112
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa-regular fa-location-plus"></i>
+                                                        6391 Elgin St. Celina, Delaware 10299
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa-regular fa-envelope"></i>
+                                                        kenzi.lawson@example.com
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sidebar-widget-wrap mb-40">
+                                    <h4 class="widget-title">Share This Course</h4>
+                                    <div class="widget-social-icon">
+                                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Course Details end -->
+
+            <!-- More Related start -->
+            <div class="course-section pt-80 pb-80 pt-xs-50 pb-xs-50">
+                <div class="container">
+                    <div class="row mb-50">
+                        <div class="col-xl-12">
+                            <div class="section-title" data-aos="fade-up" data-aos-delay="150">
+                                <div class="title">
+                                    <h2>More Related Course </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row c-row-40 justify-content-center">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="course-wrap" data-aos="fade-up" data-aos-delay="200">
+                                <div class="course-img">
+                                    <img src="{% static 'assets/img/course/course-thumb-13.jpg' %}" alt="course">
+                                </div>
+                                <div class="category">
+                                    <a href="#">Language</a>
+                                    <a href="#">English</a>
+                                </div>
+                                <div class="course-title">
+                                    <h3>
+                                        <a href="#">
+                                            Beginner Diploma In Basic English Grammar - Better Search Rang!
+                                        </a>
+                                    </h3>
+                                </div>
+                                <div class="meta">
+                                    <span>
+                                        <img src="{% static 'assets/img/icon/document-g2.svg' %}" alt="icon">
+                                        12 Lesson
+                                    </span>
+                                    <span>
+                                        <img src="{% static 'assets/img/icon/comment.svg' %}" alt="icon">
+                                        119
+                                    </span>
+                                </div>
+                                <div class="info-bottom">
+                                    <div class="ratting-wrap">
+                                        <span>6.7</span>
+                                        <div class="rating">
+                                            <i class="fa-solid fa-star active"></i>
+                                            <i class="fa-solid fa-star active"></i>
+                                            <i class="fa-solid fa-star active"></i>
+                                            <i class="fa-solid fa-star active"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span>(125)</span>
+                                    </div>
+                                    <div class="price">
+                                        <p>$19.99</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="course-wrap" data-aos="fade-up" data-aos-delay="250">
+                                <div class="course-img">
+                                    <img src="{% static 'assets/img/course/course-thumb-14.jpg' %}" alt="course">
+                                </div>
+                                <div class="category">
+                                    <a href="#">SEO</a>
+                                    <a href="#">Data</a>
+                                </div>
+                                <div class="course-title">
+                                    <h3>
+                                        <a href="#">
+                                            Visual Thinking: Drawing Data to communication of 2022
+                                        </a>
+                                    </h3>
+                                </div>
+                                <div class="meta">
+                                    <span>
+                                        <img src="{% static 'assets/img/icon/document-g2.svg' %}" alt="icon">
+                                        20 Lesson
+                                    </span>
+                                    <span>
+                                        <img src="{% static 'assets/img/icon/comment.svg' %}" alt="icon">
+                                        239
+                                    </span>
+                                </div>
+                                <div class="info-bottom">
+                                    <div class="ratting-wrap">
+                                        <span>6.7</span>
+                                        <div class="rating">
+                                            <i class="fa-solid fa-star active"></i>
+                                            <i class="fa-solid fa-star active"></i>
+                                            <i class="fa-solid fa-star active"></i>
+                                            <i class="fa-solid fa-star active"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span>(125)</span>
+                                    </div>
+                                    <div class="price">
+                                        <p>Free</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="course-wrap" data-aos="fade-up" data-aos-delay="300">
+                                <div class="course-img">
+                                    <img src="{% static 'assets/img/course/course-thumb-15.jpg' %}" alt="course">
+                                </div>
+                                <div class="category">
+                                    <a href="#">Intermediate</a>
+                                    <a href="#">Expert</a>
+                                </div>
+                                <div class="course-title">
+                                    <h3>
+                                        <a href="#">
+                                            The Challenge Of Global Learning Public Education.
+                                        </a>
+                                    </h3>
+                                </div>
+                                <div class="meta">
+                                    <span>
+                                        <img src="{% static 'assets/img/icon/document-g2.svg' %}" alt="icon">
+                                        10 Lesson
+                                    </span>
+                                    <span>
+                                        <img src="{% static 'assets/img/icon/comment.svg' %}" alt="icon">
+                                        139
+                                    </span>
+                                </div>
+                                <div class="info-bottom">
+                                    <div class="ratting-wrap">
+                                        <span>6.7</span>
+                                        <div class="rating">
+                                            <i class="fa-solid fa-star active"></i>
+                                            <i class="fa-solid fa-star active"></i>
+                                            <i class="fa-solid fa-star active"></i>
+                                            <i class="fa-solid fa-star active"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span>(125)</span>
+                                    </div>
+                                    <div class="price">
+                                        <p>$29.99</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- More Related end -->
+
+            <!-- Subscribe start -->
+            <div class="subscribe-section bg-white pb-md-80 pb-xs-50">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="subscribe-wrapper" data-aos="fade-up" data-aos-delay="200">
+                                <div class="row align-items-center">
+                                    <div class="col-xl-7 col-lg-6">
+                                        <div class="subscribe-title text-lg-start text-center">
+                                            <h3>Subscribe To Our Newsletter</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-5 col-lg-6 mt-md-30 mt-xs-30">
+                                        <div class="subscribe-form text-lg-start text-center">
+                                            <form action="#">
+                                                <div class="input-wrap">
+                                                    <input type="email" placeholder="Enter Your Mail">
+                                                    <button type="submit">Subscribe</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Subscribe end -->
+        </main>
+
+{% endblock %}
