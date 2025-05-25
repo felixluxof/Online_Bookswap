@@ -1,6 +1,8 @@
 {% extends "base.html"%}
 {% load static %}
 
+{% block title %}Create an account{% endblock %}
+
 {% block content %}
 
 
@@ -8,7 +10,7 @@
         <main>
             <!-- Breadcrumb start -->
             <div class="breadcrumb-section pt-190 pb-150 pt-lg-120 pb-lg-120 pt-md-80 pb-md-80 pt-xs-50 pb-xs-50"
-                style="background-image: url(assets/img/page-title/page-title-bg.jpg)">
+                style="background-image: url({% static 'assets/img/page-title/page-title-bg.jpg' %})">
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-12">
@@ -16,9 +18,9 @@
                                 <h2 class="title">Signup</h2>
                                 <div class="breadcrumb-menu">
                                     <ul>
-                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="{% url 'main:index' %}">Home</a></li>
                                         <li><a href="#">Pages</a></li>
-                                        <li><a href="about-us.html">Signup</a></li>
+                                        <li><a href="{% url 'main:about'%}">Signup</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -40,24 +42,29 @@
                                     </div>
                                 </div>
                                 <form action="#">
+                                    <form method="post">
+                                    {{ user_form.as_p }}
+                                    {% csrf_token %}
+                                        <p><input type="submit" value="Create my account"></p>
+                                        </form>
                                     <div class="input-wrap mb-20">
-                                        <span><img src="assets/img/icon/profile.svg" alt="icon"></span>
+                                        <span><img src="{% static 'assets/img/icon/profile.svg' %}" alt="icon"></span>
                                         <input type="text" placeholder="Username">
                                     </div>
                                     <div class="input-wrap mail mb-20">
-                                        <span><img src="assets/img/icon/message-bold.svg" alt="icon"></span>
+                                        <span><img src="{% static 'assets/img/icon/message-bold.svg' %}" alt="icon"></span>
                                         <input type="email" placeholder="Email Name">
                                     </div>
                                     <div class="input-wrap phone mb-20">
-                                        <span><img src="assets/img/icon/call-bold.svg" alt="icon"></span>
+                                        <span><img src="{% static 'assets/img/icon/call-bold.svg' %}" alt="icon"></span>
                                         <input type="text" placeholder="Phone Number">
                                     </div>
                                     <div class="input-wrap pass mb-20">
-                                        <span><img src="assets/img/icon/lock-bold.svg" alt="icon"></span>
+                                        <span><img src="{% static 'assets/img/icon/lock-bold.svg' %}" alt="icon"></span>
                                         <input type="text" placeholder="Password">
                                     </div>
                                     <div class="input-wrap pass mb-20">
-                                        <span><img src="assets/img/icon/lock-bold.svg" alt="icon"></span>
+                                        <span><img src="{% static 'assets/img/icon/lock-bold.svg' %}" alt="icon"></span>
                                         <input type="text" placeholder="Confirm Password">
                                     </div>
                                     <div class="input-check mb-20">
@@ -69,7 +76,7 @@
                                             <button class="signup-btn btn-1" type="submit">Submit Now</button>
                                             <span class="divider">OR</span>
                                             <button class="signup-btn"><img class="mr-20"
-                                                    src="assets/img/icon/google.svg" alt="icon"> Sign Up With
+                                                    src="{% static 'assets/img/icon/google.svg' %}" alt="icon"> Sign Up With
                                                 Google</button>
                                         </div>
                                     </div>
